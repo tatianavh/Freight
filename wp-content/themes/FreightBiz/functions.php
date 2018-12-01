@@ -66,17 +66,41 @@
 	    );
 		register_post_type( 'project', $arg);
 
-	//register Contact Us
+	//register News
 		$arg = array(
 	      'labels' => array(
-	        'name' => 'Contact',
-	        'singular_name' => 'Contact',
-	        'menu_name' => 'Contact'
+	        'name' => 'News',
+	        'singular_name' => 'News',
+	        'menu_name' => 'News'
 	      ),
 	      'public' => true,
 	      'show_in_nav_menues' => true,
 	    );
-		register_post_type( 'contact', $arg);
+		register_post_type( 'news', $arg);
+
+	//register Links
+		$arg = array(
+	      'labels' => array(
+	        'name' => 'Links',
+	        'singular_name' => 'Link',
+	        'menu_name' => 'Links'
+	      ),
+	      'public' => true,
+	      'show_in_nav_menues' => true,
+	    );
+		register_post_type( 'links', $arg);
+
+	//register Sections
+		$arg = array(
+	      'labels' => array(
+	        'name' => 'Sections',
+	        'singular_name' => 'Section',
+	        'menu_name' => 'Sections'
+	      ),
+	      'public' => true,
+	      'show_in_nav_menues' => true,
+	    );
+		register_post_type( 'sections', $arg);
 
 	//register taxonomy
 		$arg = array(
@@ -185,7 +209,7 @@
 	         		background-color: <?php echo get_theme_mod('theme_color_setting', 'salmon'); ?> !important;
 	         	}
 
-	         	body,p,div{
+	         	body,p,div, .link a{
 	         		font-family: <?php echo get_theme_mod('font_setting', 'Lato'); ?> !important;
 	         	}
 	         </style>

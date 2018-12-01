@@ -15,7 +15,7 @@
       </div>
       <!-- <img src="img/portfolio/app1.jpg" class="img-fluid" alt=""> -->
       <a href="<?php the_field('photo')?>" data-lightbox="portfolio" data-title="<?php the_content()?>" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-      <!-- <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a> -->
+      <a href="<?php the_field('link')?>" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
     </figure>
 
     <div class="portfolio-info">

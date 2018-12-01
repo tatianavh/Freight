@@ -25,11 +25,58 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*.page-header-title{
 	margin-top:8em;
 }*/
+/*#header .header-scrolled img{
+	max-height: 72px !important;
+}*/
+h5{
+	font-family: "Roboto", sans-serif !important;
+}
+#logo{
+	position: absolute !important;
+	top:0;
+	left:0;
+}
+#logo img{
+	max-height: 90px !important;
+}
 .section-header{
 	margin-top:3em;
 	margin-bottom: 2em;
 }
 
+.menu-active a{
+ color: #BB0202 !important;
+}
+i,
+a:hover,
+a:active,
+a:focus {
+	color: #BB0202 !important;
+}
+h3::after{
+	background-color: #BB0202 !important;
+}
+.link-preview:hover{
+	background-color: #D6D6D6 !important;
+}
+.link-details:hover{
+	background-color: #D6D6D6 !important;
+}
+.about-info a{
+	color:black;
+}
+.links-header a{
+	color: black;
+}
+.back-to-top{
+	background-color: #D6D6D6 !important;
+}
+#contact form button{
+	background-color: #D6D6D6 !important;
+	color: #BB0202 !important;
+}
+
+/*++++++++ INTRO SECTION - SLIDER +++++++++++*/
 #intro{
 	height: 70vh !important;
 }
@@ -51,28 +98,75 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*
 ++++++++++ INFO-NEWS ++++++++++*/
+#infornews{
+	
+}
 .home-info-news{
 	margin-top:2em;
+	margin-bottom: 2em;
 	display:flex;
+	flex-direction: column;
 }
-
+.home-info-news>div{
+	flex:1 0 45%;
+}
 .home-info{
 	border:1px blue solid;
-	flex:0 1 70%;
+}
+.home-info p{
+	margin-bottom: 0.5em !important;
 }
 .home-news{
-	margin-left:1.5em;
-	flex:1 0 20%;
 	display:block;
 }
 .home-news .news{
+	border-top:1px #D6D6D6 solid;
+	margin-top:0.5em;
+	padding-top:0.3em;
+	height: calc(33.33% - 0.5em);
+	
+}
+.news-header{
 	border:1px red solid;
-	height: 33%;
+	margin-bottom: 0.3em;
+}
+.news-header a{
+	color:black;
+	font-weight: bold;
+}
+.news-block{
+	display:flex;
+	flex-wrap: wrap;
+}
+.news-image{
+	border:1px blue solid;
+	height:10em;
+	flex:0 1 50%;
+}
+.news-content{
+	border:1px gray solid;
+	margin-left: 0.5em;
+	flex:1 0 45%;
+	line-height: 1.2;
+	font-size: 0.9em;
+}
+.news-bottom{
+	border:1px green solid;
+	margin-top:0.5em;
+	font-size: 0.9em;
+	flex:1 0 90%;
+	display:flex;
+	justify-content: space-between;
+}
+.news-bottom a{
+	color:black;
 }
 
 /*
 ++++++++++ ABOUT US ++++++++++*/
-
+/*#about::before{
+	background: rgba(255, 0, 255, 0.92) !important;
+}*/
 .about-content:nth-child(odd) .about-info{
 	order:1;
 }
@@ -142,10 +236,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background-repeat:no-repeat; 
 	height:0;
 	padding-top:75%;
+	background-color: #D6D6D6 !important;
 }
-.link-preview{
+/*.link-preview{
 	left: 45% !important;
-}
+}*/
 .project-caption{
 	color: black;
 }
@@ -158,7 +253,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .lb-caption{
-	font-size: 1.3em !important;
+	font-size: 1em !important;
 	color:black  !important;
 	font-weight: 400 !important;
 	line-height: 1.7em !important;
@@ -168,15 +263,83 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 .lb-image{
-	filter: blur(4px);
+	opacity: 0.5 !important;
+	/*filter: blur(4px);*/
 	/*filter: grayscale(100%);*/
 }
+
+/*++++++++++ USEFUL LINKS +++++++++++*/
+#links{
+	padding: 60px 0 40px 0;
+	height: 80vh;
+	background-image: url("imagesLiz/linksbg1.jpg");
+	background-size: cover;
+	background-position:center; 
+   position: relative;
+   /*filter: grayscale(100%);*/
+}
+/*#links::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.82);
+  z-index: 9;
+}
+#links .container {
+  position: relative;
+  z-index: 10;
+}*/
+.links-item{
+	margin-bottom: 1em;
+	border: 1px #eee solid;
+	background-color: #D6D6D6;
+	padding: 0.5em;
+}
+.links-header p{
+	margin-bottom: 0 !important;
+	font-size: 1.3em !important;
+}
+
+
+
+
+/*++++++++++ CONTACT US +++++++++++*/
+.contact-address, .contact-phone{
+	border-right: 1px solid #ddd !important;
+	border-left: 0 !important;
+}
+
+/*++++++++++ FOOTER +++++++++++*/
+.footerlogo{
+	border:1px white solid;
+	background-size:cover;
+	background-position:center; 
+	background-repeat:no-repeat; 
+	height:10em;
+	width:15em;
+	/*padding-top:65%;*/
+}
+
+
 /*
-
-
 ++++++++++ BREAKPOINTS ++++++++++*/
 
 @media (min-width: 768px) {
+	.home-info-news{
+		flex-direction: row;
+	}
+	.home-news{
+		margin-left: 1em;
+	}
+	.home-news .news{
+		margin-bottom:0.5em;
+		margin-top: 0;
+	}
+
+
   #about .about-body{
 	display: flex;
 	margin-top: 1em;
@@ -189,13 +352,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		 background-position:center; 
 		padding-top:44%;
 	}
-	
+	.lb-caption{
+		font-size: 1.3em !important;
+	}
+
+	/*
+	.news-block{
+		flex-direction: column;
+	}
+	.news-image{
+		width:50%;
+		flex:0 0 100%;
+	}
+	.news-content{
+		width:40%;
+		flex:0 0 100%;
+		order:1;
+	}
+	.news-bottom{
+		width:40%;
+		flex:0 0 100%;
+		order:2;
+	}*/
+
 }
 
 @media (min-width: 992px) {
   .lb-details{
 		width:70% !important;
 	}
+
 }
 
 @media (min-width: 1024px) {
