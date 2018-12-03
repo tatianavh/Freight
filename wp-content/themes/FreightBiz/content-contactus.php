@@ -37,7 +37,7 @@
 <div class="form">
   <div id="sendmessage">Your message has been sent. Thank you!</div>
   <div id="errormessage"></div>
-  <form action="" method="post" role="form" class="contactForm">
+<!--   <form action="" method="post" role="form" class="contactForm">
     <div class="form-row">
       <div class="form-group col-md-6">
         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -57,5 +57,6 @@
       <div class="validation"></div>
     </div>
     <div class="text-center"><button type="submit">Send Message</button></div>
-  </form>
+  </form> -->
+  <?php echo do_shortcode('[contact-form-7 id="156" title="Untitled"]') ?>
 </div>

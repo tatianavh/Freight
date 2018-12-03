@@ -5,20 +5,25 @@
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="row">
+        
 
-          <?php 
-            if ( have_posts() ) {
-              while ( have_posts() ) {
-                the_post(); 
-                //
-                get_template_part('content','footer');
-                //
-              } // end while
-            } // end if
+          <?php
+              // The Query
+                  $args = array('post_type'=>'footer');
+              $the_query = new WP_Query( $args );
+
+              // The Loop
+              global $active;
+              $active = 'active';
+              while ( $the_query->have_posts() ) {                
+                  $the_query->the_post();
+                  get_template_part('content','footer');
+                  $active = '';
+              }
+              //Restore original Post data                    
+              wp_reset_postdata();                
           ?>
 
-        </div>
       </div>
     </div>
 
@@ -45,10 +50,13 @@
   <!-- Contact Form JavaScript File -->
   <script src="<?php echo get_bloginfo('template_directory'); ?>/contactform/contactform.js"></script>
 
+  
 
-  <!-- Template Main Javascript File -->
+<!--   <script src="https://fastcdn.org/Underscore.js/1.8.3/underscore-min.js"></script>
+ -->  <!-- Template Main Javascript File -->
   <script src="<?php echo get_bloginfo('template_directory'); ?>/js/main.js"></script>
-
+<!--   <script src="<?php echo get_bloginfo('template_directory'); ?>/myscript.js"></script>
+ -->
   <?php wp_footer(); ?>
 </body>
 </html>

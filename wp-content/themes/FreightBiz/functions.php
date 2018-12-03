@@ -90,17 +90,17 @@
 	    );
 		register_post_type( 'links', $arg);
 
-	//register Sections
+	//register Footer
 		$arg = array(
 	      'labels' => array(
-	        'name' => 'Sections',
-	        'singular_name' => 'Section',
-	        'menu_name' => 'Sections'
+	        'name' => 'Footer',
+	        'singular_name' => 'Footer',
+	        'menu_name' => 'Footer'
 	      ),
 	      'public' => true,
 	      'show_in_nav_menues' => true,
 	    );
-		register_post_type( 'sections', $arg);
+		register_post_type( 'footer', $arg);
 
 	//register taxonomy
 		$arg = array(

@@ -11,7 +11,7 @@
         <div class="row portfolio-container">
           <?php
               // The Query
-                  $args = array('post_type'=>'project');
+                  $args = array('post_type'=>'project','posts_per_page'=> -1);
               $the_query = new WP_Query( $args );
 
               // The Loop
