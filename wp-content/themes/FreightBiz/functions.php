@@ -209,9 +209,9 @@
 	         		background-color: <?php echo get_theme_mod('theme_color_setting', 'salmon'); ?> !important;
 	         	}
 
-	         	body,p,div, .link a{
-	         		font-family: <?php echo get_theme_mod('font_setting', 'Lato'); ?> !important;
-	         	}
+	         	/*body,p,div, .link a{*/
+	         	/*	font-family: <?php echo get_theme_mod('font_setting', 'Roboto'); ?> !important;*/
+	         	/*}*/
 	         </style>
 	    <?php
 	}

@@ -52,11 +52,11 @@
 
   
 
-<!--   <script src="https://fastcdn.org/Underscore.js/1.8.3/underscore-min.js"></script>
- -->  <!-- Template Main Javascript File -->
+   <!--<script src="https://fastcdn.org/Underscore.js/1.8.3/underscore-min.js"></script>-->
+<!-- Template Main Javascript File -->
   <script src="<?php echo get_bloginfo('template_directory'); ?>/js/main.js"></script>
-<!--   <script src="<?php echo get_bloginfo('template_directory'); ?>/myscript.js"></script>
- -->
+   <!--<script src="<?php echo get_bloginfo('template_directory'); ?>/myscript.js"></script>-->
+
   <?php wp_footer(); ?>
 </body>
 </html>

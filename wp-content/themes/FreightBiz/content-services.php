@@ -17,7 +17,7 @@
 	    <div class="service-body">
 	    	<div class="service-img"  style="background-image:url(<?php the_field('icon')?>);">
 	    	</div>
-	    	<div class="description"><?php the_field('description'); ?></div>
+	    	<div class="description"><?php the_content(); ?></div>
 	    </div>
  	</div>
     

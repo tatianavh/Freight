@@ -8,7 +8,7 @@
       </div>
 
       <div class="home-news">
-        <!-- <?php
+         <?php
               // The Query
                   $args = array('post_type'=>'news');
               $the_query = new WP_Query( $args );
@@ -24,7 +24,7 @@
               //Restore original Post data                    
               wp_reset_postdata();                
           ?>
-         -->
+       
       </div>
     </div>
   </div>

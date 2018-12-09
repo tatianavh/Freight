@@ -12,7 +12,7 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif !important;
 }
 
 a {
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif !important;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -287,7 +287,7 @@ h6 {
 }
 
 #intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -798,7 +798,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -830,7 +830,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #skills .progress .skill {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 35px;
   padding: 0;
   margin: 0 0 0 20px;
@@ -876,7 +876,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #facts .counters span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 48px;
   display: block;
@@ -886,7 +886,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #111;
 }
@@ -1381,7 +1381,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #eee;
 }
 

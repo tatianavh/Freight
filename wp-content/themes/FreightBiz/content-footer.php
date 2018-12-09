@@ -10,7 +10,7 @@
     <div><?php the_field('city'); ?></div>
     <div><strong>Phone: </strong><a href="tel:"><?php the_field('phone'); ?></a></div>
     <div><strong>Mobile: </strong><a href="tel:"><?php the_field('mobile'); ?></a></div>
-    <div><strong>Email: </strong> <?php the_field('email'); ?></div>
+    <div><strong>Email: </strong><a href="mailto:<?php the_field('email'); ?>"> <?php the_field('email'); ?></a></div>
     <!-- <p>
       <?php the_field('address'); ?><br>
       <?php the_field('city'); ?><br>

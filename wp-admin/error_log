@@ -1,0 +1,2 @@
+[04-Dec-2018 01:05:51 UTC] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/tatianavanhest/public_html/freight/wp-includes/formatting.php on line 3709
+[04-Dec-2018 01:20:52 UTC] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home/tatianavanhest/public_html/freight/wp-includes/formatting.php on line 3709
